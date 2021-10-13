@@ -1,0 +1,229 @@
+@font-face {
+  font-family: "GT_America_Compressed_Bold";
+  src: url("GT_America_Compressed_Bold.woff2") format("woff2"),
+  url("GT_America_Compressed_Bold.woff") format("woff");
+}
+
+.hero__section {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  min-height: 133.5vw;
+}
+
+@media (min-width: 768px) {
+  .hero__section {
+    min-height: 55.5vw;
+  }
+}
+
+.hero__media {
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.hero__media .placeholder-svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.hero__box {
+  border: 0;
+  padding: 2rem;
+  position: relative;
+  height: fit-content;
+  text-align: center;
+  width: 100%;
+}
+
+.hero__box--small {
+  width: 40%;
+}
+
+.hero__box--medium {
+  width: 60%;
+}
+
+.hero__box--big {
+  width: 80%;
+} 
+
+@media screen and (max-width: 767px) {
+  .hero__box {
+    position: absolute;
+    text-align: center;
+    background: transparent;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.hero__content {
+  padding: 7rem 1rem;
+  position: absolute;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__content--top {
+    top: 0;
+  }
+
+  .hero__content--center {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .hero__content--bottom {
+    bottom: 0;
+  }
+
+  .hero__content--start .hero__box {
+    margin-left: 0;
+    margin-right: auto;
+  }
+
+  .hero__content--middle {
+    margin: auto;
+  }
+
+  .hero__content--end .hero__box {
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  .hero__box {
+    padding: 1rem;
+    width: auto;
+    margin: 0 auto;
+  }
+
+  .hero__box--small {
+    width: 40%;
+  }
+
+  .hero__box--medium {
+    width: 60%;
+  }
+
+  .hero__box--big {
+    width: 85%;
+  }
+
+}
+
+.hero__media--desktopHidden {
+  display: none;
+}  
+    
+.hero__mobileImg {
+  display: block;
+  max-width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%; 
+  object-fit: cover;
+}
+
+@media screen and (max-width: 768px) { 
+  
+  .hero__media.mobile--hidden {
+    display: none;
+  }
+  
+  .hero__media--desktopHidden {
+    display: block;
+  } 
+    
+}
+
+.hero__heading {
+  margin: 0;
+  text-transform: uppercase;
+  font-family: "GT_America_Compressed_Bold";    
+}
+
+.hero__heading p {
+  margin: 0;
+} 
+
+.hero__heading--large {
+  font-size: 6rem;
+  line-height: 7rem;
+} 
+
+.hero__heading--medium {
+  font-size: 4rem;
+  line-height: 6rem;
+}
+
+.hero__text--small {
+  font-size: 1.6rem;
+}
+
+.hero__text--medium {
+  font-size: 2.2rem;
+}
+
+.hero__text--large {
+  font-size: 2.8rem;
+}
+
+.button {
+  margin: 2.5rem 0;
+  padding: 1.8rem 5.3rem;
+  opacity: 1;
+  font-family: "GT_America_Compressed_Bold";
+}
+
+@media screen and (min-width: 992px) {
+  .hero__heading--large {
+    font-size: 15rem;
+    line-height: 13rem;
+  } 
+
+  .hero__heading--medium {
+    font-size: 12rem;
+    line-height: 10rem;
+  }
+
+  .button {
+    padding: 1.75rem 4.05em;
+    font-size: 1.6rem;
+  }
+}
+
+.hero__buttonBottom {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 1;
+  z-index: 1000;
+  border: 1px solid #fff;
+}
+
+.hero__buttonBottom svg {
+  width: 12px;
+  height: 12px;
+  transform: rotateZ(-90deg);
+}
+
+@media screen and (max-width: 767px) {
+  .hero__buttonBottom {
+    display: none;
+  }
+}
